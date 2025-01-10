@@ -1,7 +1,9 @@
 package com.example.Login.Service.Restaurent;
 
 //import com.wen1.model.User;
-import org.springframework.security.core.userdetails.User;
+//import org.springframework.security.core.userdetails.User;
+
+import com.example.Login.Entity.Restaurant.User;
 
 public interface UserService {
 

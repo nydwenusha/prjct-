@@ -1,14 +1,18 @@
 package com.example.Login.Service.Restaurent;
 
 
+import com.example.Login.Config.JwtProvider;
 import com.example.Login.Entity.Restaurant.User;
 import com.example.Login.Repository.Restaurant.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/*
+
 @Service
 public class UserServiceImp implements UserService{
+
+
+    private final String secretKey = "your-secret-key";
 
 
     @Autowired
@@ -16,6 +20,8 @@ public class UserServiceImp implements UserService{
 
     @Autowired
     private JwtProvider jwtProvider;
+
+
 
     @Override
     public User findUserByJwtToken(String jwt) throws Exception {
@@ -45,4 +51,4 @@ public class UserServiceImp implements UserService{
 }
 
 
- */
+

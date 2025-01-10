@@ -62,13 +62,13 @@ public class SecurityConfig implements WebMvcConfigurer {
                         .requestMatchers("/api/login/changePassword").permitAll()
                         .requestMatchers("/api/RoomPackage/**").permitAll()
                         .requestMatchers("/api/profile/deleteProfile/**").hasRole("ADMIN")
-<<<<<<< HEAD
+
                         .requestMatchers("/api/admin/**").hasAnyRole("RESTAURANT_OWNER","ADMIN")
                         .requestMatchers("/api/**").authenticated()
-=======
+
                         .requestMatchers("/rooms/**").permitAll()
                         .requestMatchers("/roomsPackages/**").permitAll()
->>>>>>> 1dffd7ce86415d9d40d5a63400610086852ec352
+
                         .anyRequest().authenticated()
                 )
                 .exceptionHandling(exceptionHandlingConfigurer ->

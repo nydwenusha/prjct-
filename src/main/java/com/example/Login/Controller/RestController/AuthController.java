@@ -1,5 +1,6 @@
 package com.example.Login.Controller.RestController;
 
+import com.example.Login.Config.JwtProvider;
 import com.example.Login.Dto.Request.Driver.Restaurent.LoginRequest;
 import com.example.Login.Dto.Response.Restaurant.AuthResponse;
 import com.example.Login.Entity.Restaurant.Cart;
@@ -46,10 +47,10 @@ public class AuthController {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-   /* @Autowired
+    @Autowired
     private JwtProvider jwtProvider;
 
-    */
+
 
     @Autowired
     private CustomerUserDetailsService customerUserDetailsService;
@@ -57,7 +58,7 @@ public class AuthController {
     @Autowired
     private CartRepository cartRepository;
 
-   /* @PostMapping("/signup")
+    @PostMapping("/signup")
     public ResponseEntity<AuthResponse>createUserHandler(@RequestBody User user) throws Exception {
 
 
@@ -120,7 +121,7 @@ public class AuthController {
 
 
     }
-  */
+
 
     private Authentication authenticate(String username, String password){
 
